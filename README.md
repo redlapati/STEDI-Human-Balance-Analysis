@@ -76,4 +76,4 @@ AWS Glue jobs transforms data in trusted zone and stores final curated data here
 
 ### Results
 
-Sample queries and results are found under the folder ***Screenshots***
+Screenshots of sample queries and results are found under the folder ***Screenshots***
