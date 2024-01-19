@@ -74,4 +74,6 @@ AWS Glue jobs transforms data in trusted zone and stores final curated data here
 
 `machine_learning_curated.py` - python script to get both trusted step trainer data and trusted accelerometer data for the curated customers to be used for machine learning model
 
+### Results
 
+Sample queries and results are found under the folder ***Screenshots***
