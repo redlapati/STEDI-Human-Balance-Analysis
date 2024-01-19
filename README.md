@@ -44,6 +44,12 @@ AWS Glue Catelog tables are created for the source data and AWS Glue jobs are cr
 
 This data is stored in AWS S3 and AWS Glue table are created on top these datasets.
 
+`customer_landing.sql` - SQL DDL for customer_landing table
+
+`accelerometer_landing.sql` - SQL DDL for accelerometer_landing table
+
+`step_trainer_landing.sql` - SQL DDL for step_trainer_landing table 
+
 ## Implementation
 
 **Landing Zone** 
