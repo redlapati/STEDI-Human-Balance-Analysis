@@ -36,9 +36,9 @@ AccelerometerTrusted_node1705627208544 = glueContext.create_dynamic_frame.from_c
 )
 
 # Script generated for node Transform SQL
-SqlQuery2013 = """
+SqlQuery2402 = """
 select st.serialnumber, st.sensorreadingtime, st.distancefromobject,
-       at.timestamp, at.x, at.y, at.z    
+       at.user, at.timestamp, at.x, at.y, at.z    
 from step_trainer_trusted st 
 join accelerometer_trusted at 
 on st.sensorreadingtime = at.timestamp;
@@ -46,7 +46,7 @@ on st.sensorreadingtime = at.timestamp;
 """
 TransformSQL_node1705627314931 = sparkSqlQuery(
     glueContext,
-    query=SqlQuery2013,
+    query=SqlQuery2402,
     mapping={
         "step_trainer_trusted": StepTrainerTrusted_node1705627206773,
         "accelerometer_trusted": AccelerometerTrusted_node1705627208544,

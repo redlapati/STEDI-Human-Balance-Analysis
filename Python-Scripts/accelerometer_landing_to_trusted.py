@@ -36,18 +36,17 @@ CustomerTrusted_node1705552228812 = glueContext.create_dynamic_frame.from_catalo
 )
 
 # Script generated for node Transform SQL
-SqlQuery1562 = """
+SqlQuery1941 = """
 select distinct al.user, al.timestamp, al.x, al.y, al.z 
 from accelerometer_landing al 
 join customer_trusted ct 
 on al.user = ct.email
-where al.timestamp >= ct.sharewithresearchasofdate
 ;
 
 """
 TransformSQL_node1705552143432 = sparkSqlQuery(
     glueContext,
-    query=SqlQuery1562,
+    query=SqlQuery1941,
     mapping={
         "accelerometer_landing": AccelerometerLanding_node1705552057067,
         "customer_trusted": CustomerTrusted_node1705552228812,
